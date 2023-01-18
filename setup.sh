@@ -19,4 +19,12 @@ chsh -s /bin/fish -y
 #install starship
 curl -sS https://starship.rs/install.sh | sh
 
+#snap store
+sudo dnf install snapd
+snap refresh
+sudo ln -s /var/lib/snapd/snap /snap
+
+#node
+sudo snap install node --classic 
+
 #run content in config.fish in repo here
